@@ -1,5 +1,5 @@
 const input = document.getElementById('searchPokemon');
-const searchButtom = document.getElementById('searchButton');
+const button = document.getElementById('searchButton');
 
 searchButtom.addEventListener('click', () => {
   let url = `https://pokeapi.co/api/v2/pokemon/${searchPokemon.value}`;
