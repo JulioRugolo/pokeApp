@@ -53,45 +53,41 @@ form input {
   cursor: unset;
 }
 
-#resultBlock {
-  visibility:visible;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.flip-card {
+  background-color: transparent;
   width: 300px;
-  margin-bottom: 50px;
+  height: 200px;
+  perspective: 1000px;
 }
 
-#card {
+.flip-card-inner {
+  position: relative;
   width: 100%;
   height: 100%;
-  background-color: rgb(230, 12, 12);
-  border-radius: 20px;
-  border: black solid 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.card-rotate {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  background-color: yellow;
   color: white;
-}
-
-#name {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-#resultPic {
-  width: 100%;
-  margin-top: 10px;
-  height: 150px;
-  background-color: rgb(28, 27, 27);
-  border-radius: 20px;
-}
-
-#info {
-  width: 100%;
-  height: 20px;
-  background-color: rgb(28, 27, 27);
-  border-radius: 20px;
-  margin-top: 10px;
+  width: 250px;
+  height: 300px;
+  transform: rotateY(180deg);
 }
