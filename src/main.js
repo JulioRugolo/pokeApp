@@ -1,16 +1,17 @@
-import Pokedex from 'pokedex-promise-v2';
-const options = {
-  versionPath: '/api/v2/',
-  cacheLimit: 100 * 1000, // 100s
-  timeout: 5 * 1000 // 5s
-}
-const pokedex = new Pokedex(options);
+const poke = 'pikachu';
 
-
-pokedex.getPokemonByName("pikachu")
-.then((response) => {
-  console.log(response);
-})
-.catch((error) => {
-  console.log('There was an ERROR: ', error);
-});
+const loadPokemon = () => {
+  let url = `https://pokeapi.co/api/v2/pokemon/${poke}`;
+  fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.clear();
+      document.getElementById('text-name').innerHTML = data.name;
+    })
+    .catch((erro) => {
+      console.log('erro' + erro)
+    });
+};
+loadPokemon();
