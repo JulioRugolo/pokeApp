@@ -54,7 +54,7 @@ form input {
 }
 
 #resultBlock {
-  visibility:hidden;
+  visibility:visible;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,7 +94,4 @@ form input {
   background-color: rgb(28, 27, 27);
   border-radius: 20px;
   margin-top: 10px;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
