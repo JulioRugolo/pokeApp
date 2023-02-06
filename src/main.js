@@ -8,6 +8,7 @@ searchButtom.addEventListener('click', () => {
       return response.json();
     })
     .then((data) => {
+      console.log(data);
       document.getElementById('name').innerHTML = data.name;
     })
     .catch((erro) => {
