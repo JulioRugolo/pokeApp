@@ -1,4 +1,4 @@
-const searchPokemon = document.getElementById('searchPokemon');
+const input = document.getElementById('searchPokemon');
 const searchButtom = document.getElementById('searchButton');
 
 searchButtom.addEventListener('click', () => {
