@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;  
+}
+
+body {
+  background-image: url('./img/bg.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  cursor: url('./img/rsz_1pointer.png'), auto;
+}
+
+body h1 {
+  color: white;
+  font-size: 50px;
+  text-shadow: black 2px 2px 8px;
+}
+
+#divForm{
+  margin: 100px;
+}
+form {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+form input {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 20px;border-radius: 20px;
+}
+
+#searchButton {
+  width: 180px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: yellow;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 5px;
+}
+
+#searchButton:hover {
+  background-color: red;
+  color: aliceblue;
+  cursor: unset;
+}
+
+#resultBlock {
+  visibility:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+#card {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  background-color: yellow;
+  border-radius: 20px;
+  border: black solid 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+#name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#resultPic {
+  width: 100%;
+  margin-top: 10px;
+  height: 150px;
+  background-color: rgb(28, 27, 27);
+  border-radius: 20px;
+}
+
+#info {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(28, 27, 27);
+  border-radius: 20px;
+  margin-top: 10px;
+}
